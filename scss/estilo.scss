@@ -1,0 +1,21 @@
+@import './variables';
+@import './general';
+@import './headerFooter';
+@import './body'
+
+@mixin textos () {
+    color: brown;
+    &parrafo{
+        color:cornflowerblue;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+main {
+    .textoUno{
+        @include textos
+    }
+    .textoDos{
+        @include textos
+    }
+}

@@ -1,0 +1,84 @@
+.redes {
+    justify-content: space-around;
+    display: flex;
+    font-size: 25px;
+}
+
+.redes a i {
+    margin: 10px;
+}
+
+.enlace {
+    color:$fondoAzul;
+}
+
+.redes a i:hover {
+    transform: scale(1.5);
+    transition: all 1s ease;
+    padding: 5px 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $fondoAzul;
+
+}
+
+.nav {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    margin-right: 10%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.menu {
+    right: 10px;
+    list-style: none;
+    margin: 10px;
+    background-size: 5px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+
+    .menu li {
+        display: inline;
+        text-align: center;
+        text-decoration: none;
+        background-color: $fondoAzul;
+        background-size: 5px;
+        color: aliceblue;
+        border-radius: 5px;
+        border: 2px solid $fondoAzul;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+    }
+
+    .menu li a :hover {
+        color: #ffffff;
+        font-weight: bold;
+    }
+}
+
+
+
+.footer {
+    background-color: $fondoAzul;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,308 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0.3fr 1fr 0.2fr 1.2fr 0.5fr;
+    grid-template-areas:
+        "tituloPrincipal tituloPrincipal"
+        "texto1 img-uno"
+        "subtitulo subtitulo"
+        "texto-dos imagen-dos"
+        "texto-3 youtube";
+
+    .tituloPrincipal {
+        grid-area: tituloPrincipal;
+        text-align: center;
+        text-decoration: solid;
+        color: $fondoAzul;
+        font-size: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textoUno {
+        grid-area: texto1;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        margin: 30px;
+    }
+
+    .imagenUno {
+        grid-area: img-uno;
+        width: 450px;
+        height: 450px;
+        margin: auto;
+        transition: all 3s ease;
+    }
+
+    .imagenUno:hover {
+        transform: rotate(10deg);
+    }
+
+    .subtitulo {
+        grid-area: subtitulo;
+        text-align: center;
+        font-size: 40px;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $fondoAzul;
+    }
+}
+
+.capacitaciones {
+    color: $fondoAzul;
+    font-size: 25px;
+}
+
+.container .textoDos {
+    grid-area: texto-dos;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.container .imagenDos {
+    grid-area: imagen-dos;
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    text-align: center;
+}
+
+.container .textoTres {
+    grid-area: texto-3;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    content: 500px;
+    margin: 5px 100px 12px 150px;
+}
+
+.container .youtube1 {
+    grid-area: youtube;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloPrincipalProductos {
+    color: $fondoAzul;
+    font-size: 45px;
+    text-align: center;
+}
+
+.textoCuatro {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.textoCinco {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.textoSeis {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.textoSiete {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.imagenTres {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.imagenCuatro {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.imagenCinco {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.imagenSeis {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.tituloPrincipalNosotros {
+    text-align: center;
+    color: $fondoAzul;
+    font-size: 45px;
+}
+
+.textoOcho {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.textoNueve {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.tituloPrincipalBlog {
+    text-align: center;
+    color: $fondoAzul;
+    font-size: 45px;
+}
+
+.subtituloBlog {
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    color: $fondoAzul;
+}
+
+.textoDiez {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.textoOnce {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+}
+
+.imagenDiez {
+    width: 450px;
+    height: 450px;
+
+}
+
+.formulario {
+    text-align: center;
+    margin: 10px 15px 10px 15px;
+    border-color: $fondoAzul;
+    border-style: solid;
+    border-width: 10px;
+    width: 400px;
+    margin-left: 40%;
+    margin-right: 50%;
+}
+
+.linkProductos {
+    color: $fondoAzul;
+}
+
+.tituloPrincipalContacto {
+    text-align: center;
+    color: $fondoAzul;
+    font-size: 45px;
+}
+
+.subtituloContacto {
+    text-align: center;
+    color: #000000;
+    font-size: 45px;
+}
+
+.productosAB {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 320px) and (max-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 0.3fr 1fr 0.6fr 0.2fr 1fr 0.5fr 0.2fr 0.5fr;
+        grid-template-areas:
+            "tituloPrincipal"
+            "texto1"
+            "img-uno"
+            "subtitulo"
+            "texto-dos"
+            "imagen-dos"
+            "texto-3"
+            "youtube";
+    }
+
+    .container .imagenUno {
+        width: 320px;
+        height: 320px;
+    }
+
+    .container .imagenDos {
+        width: 320px;
+        height: 420px;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    .nav {
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .menu li {
+        margin: 15px;
+    }
+
+    .container .textoTres {
+        margin: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .youtube1 iframe {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:768px) {
+    .menu {
+        flex-direction: row;
+    }
+}
