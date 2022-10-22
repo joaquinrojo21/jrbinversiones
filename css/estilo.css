@@ -251,9 +251,8 @@ a:active {
   border-color: #5b5bf7;
   border-style: solid;
   border-width: 10px;
-  width: 400px;
-  margin-left: 40%;
-  margin-right: 50%; }
+  width: 768px;
+  margin-left: 25%; }
 
 .linkProductos {
   color: #5b5bf7; }
@@ -295,6 +294,9 @@ a:active {
     width: 320px; }
   .blogyt {
     width: 320px; }
+  .formulario {
+    width: 320px;
+    margin-left: auto; }
   .nav {
     margin: 0; }
   .menu {
